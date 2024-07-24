@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <span style="color: white;" id="clock"></span>
+    </header>
+    <main>
+        <section class="calculator">
+            <div id="visor">
+                <input type="text" id="resultado" class="control-resultado" placeholder="0" disabled="disabled">
+            </div>
+
+            <div class="buttons">
+                <div class="row">
+                  <button id="icon" onclick=""><i class="fa-solid fa-delete-left"></i></button>
+                  <button onclick="calcular('acao', 'n!')">n!</button>
+                  <button onclick="calcular('acao', '(')">(</button>
+                  <button onclick="calcular('acao', ')')">)</button>
+                  <button onclick="calcular('acao', '%')">%</button>
+                  <button id="ce" onclick="calcular('acao', 'ce')">CE</button>
+                </div>
+                
+                <div class="row">
+                    <button onclick="calcular('acao', 'sin')">sin</button>
+                    <button onclick="calcular('acao', 'pi')">π</button>
+                    <button onclick="calcular('valor', '7')">7</button>
+                    <button onclick="calcular('valor', '8')">8</button>
+                    <button onclick="calcular('valor','9')">9</button>
+                    <button onclick="calcular('acao', '/')">÷</button>
+                  </div>
+
+                <div class="row">
+                    <button onclick="calcular('acao', 'cos')">cos</button>
+                    <button onclick="calcular('acao', 'e')">e</button>
+                    <button onclick="calcular('valor','4')">4</button>
+                    <button onclick="calcular('valor','5')">5</button>
+                    <button onclick="calcular('valor','6')">6</button>
+                    <button onclick="calcular('acao', '*')">x</button>
+                </div>
+                
+                <div class="row">
+                    <button onclick="calcular('acao', 'tan')">tan</button>
+                    <button onclick="calcular('acao', 'raiz')">√</button>
+                    <button onclick="calcular('valor','1')">1</button>
+                    <button onclick="calcular('valor','2')">2</button>
+                    <button onclick="calcular('valor','3')">3</button>
+                    <button onclick="calcular('acao', '-')">-</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="calcular('acao', 'log')">log</button>
+                    <button onclick="calcular('acao', '**')">x<sup>2</sup></button>
+                    <button onclick="calcular('valor','0')">0</button>
+                    <button onclick="calcular('acao','.')">.</button>
+                    <button id="equal" onclick="calcular('acao', '=')">=</button>
+                    <button onclick="calcular('acao', '+')">+</button>
+                </div>
+
+              </div>
+        </section>
+
+        <section class="description">
+            <h1>Math Calculator</h1>
+            <p>These calculators are more advanced than basic calculators. It was designed to perform complex mathematical operations, including trigonometric, logarithmic, and exponential functions. Try it Now</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
