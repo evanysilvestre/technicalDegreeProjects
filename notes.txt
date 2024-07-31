@@ -1,0 +1,9 @@
+July 24th, 2024 - Wednesday
+Javascript
+    Truthy and Falsy Values
+        Falsy values are not exactly false values, but will become false when we try to convert them into a boolean.
+        5 falsy values: 0, '', undefined, NaN, null
+        
+        Everything else are so called truthy values. values that will be converted to true, for example,
+any number that is not zero or any string that is not an empty string will be converted to true when we attempt to convert them to a boolean.
+    
