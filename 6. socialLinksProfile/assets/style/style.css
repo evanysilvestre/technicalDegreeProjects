@@ -27,13 +27,12 @@ body, main, figure, .quotation{
 }
 
 main {
-    width: 25%;
-    height: 80%;
+    width: 20%;
+    height: 65%;
     background-color: #603e56;
-    border-radius: 10%;
-    gap: 3%;
-    padding: 1em;
-    
+    border-radius: 15px;
+    padding: 8px;
+    gap: 2%;
 }
 
 figure img {
@@ -41,20 +40,25 @@ figure img {
     border-radius: 50%;
 }
 
-.quotation {
-    width: 80%;
-    font-size: small;
+
+h4 {
+    color: #ba4a4f;
+    text-align: center;
 }
 
+.quotation {
+    width: 80%;
+}
 
 .quotation span {
-    position: relative;
-    left: 8vw;
     font-style: italic;
+    font-size: small;
+    text-align: right;
+    width: 90%;
 }
 
 .links {
-    background: rgba(20, 31, 37, 0.5) 22%;
+    background: rgba(20, 31, 37, 0.2) 22%;
     width: 80%;
     height: 7%;
     border-radius: 15px;
@@ -66,9 +70,24 @@ figure img {
 a {
     text-decoration: none;
     color: #ba4a4f;
-    font-size: small;
+    font-size: smaller;
 }
 
 .links:hover {
-    transition: 2s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*Responsividade - Tablet*/
+@media screen and (max-width: 1023px) and (min-width: 768px){
+    main {
+    width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        width: 80%;
+    }
 }
