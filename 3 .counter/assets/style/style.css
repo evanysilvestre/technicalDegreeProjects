@@ -19,7 +19,7 @@ body, .container, .visor {
     flex-direction: column;
 }
 h1 {
-    color: aliceblue;
+    color: black;
     font-weight: lighter;
     font-size: 50px;
 }
@@ -34,7 +34,7 @@ h1 {
     font-size: 35px;
     border: 1px solid white ;
     border-radius: 50%;
-    color: aliceblue;
+    color: black;
 }
 
 .btn {

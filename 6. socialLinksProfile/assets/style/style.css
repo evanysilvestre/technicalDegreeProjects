@@ -28,7 +28,7 @@ body, main, figure, .quotation{
 
 main {
     width: 20%;
-    height: 65%;
+    height: 70%;
     background-color: #603e56;
     border-radius: 15px;
     padding: 8px;
@@ -82,12 +82,15 @@ a {
 /*Responsividade - Tablet*/
 @media screen and (max-width: 1023px) and (min-width: 768px){
     main {
-    width: 40%;
+    width: 35%;
+    height: 80%;
     }
 }
 
+/*Responsive - Phone*/
 @media screen and (max-width: 767px) {
     main {
-        width: 80%;
+        width: 50%;
+        height: 75%;
     }
 }

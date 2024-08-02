@@ -19,7 +19,7 @@ btns.forEach(function (btn) {
         } else if (count < 0) {
             visor.style.color = 'red';
         } else {
-            visor.style.color = 'white'
+            visor.style.color = 'black'
         }
 
         visor.textContent = count
